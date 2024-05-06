@@ -89,4 +89,7 @@ dependencies {
     implementation(libs.converter.gson)
 
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    //YCharts
+    implementation(libs.ycharts)
 }

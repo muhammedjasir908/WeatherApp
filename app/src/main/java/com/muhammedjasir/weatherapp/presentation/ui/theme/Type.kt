@@ -21,7 +21,7 @@ val Typography = Typography(
     titleLarge = TextStyle(
         fontFamily = font,
         fontWeight = FontWeight.Bold,
-        fontSize = 30.sp
+        fontSize = 40.sp
     ),
     titleMedium = TextStyle(
         fontFamily = font,
@@ -35,18 +35,23 @@ val Typography = Typography(
     ),
     bodyLarge = TextStyle(
         fontFamily = font,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 18.sp,
     ),
     bodyMedium = TextStyle(
         fontFamily = font,
-        fontWeight = FontWeight.Normal,
-        fontSize = 18.sp,
+        fontWeight = FontWeight.Medium,
+        fontSize = 16.sp,
     ),
     bodySmall = TextStyle(
         fontFamily = font,
         fontWeight = FontWeight.Normal,
-        fontSize = 18.sp,
+        fontSize = 14.sp,
+    ),
+    labelLarge = TextStyle(
+        fontFamily = font,
+        fontWeight = FontWeight.Bold,
+        fontSize = 16.sp
     )
     /* Other default text styles to override
     titleLarge = TextStyle(
