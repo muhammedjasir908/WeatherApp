@@ -11,10 +11,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.muhammedjasir.weatherapp.R
+import androidx.compose.ui.unit.sp
 import com.muhammedjasir.weatherapp.domain.weather.WeatherData
+import com.muhammedjasir.weatherapp.presentation.theme.ui.theme.font
 import java.time.format.DateTimeFormatter
 
 @Composable
@@ -34,12 +36,22 @@ fun HourlyWeatherDisplay(
         verticalArrangement = Arrangement.SpaceBetween
     ) {
         Text(text = formattedTime,
-            color = Color.LightGray)
-        Image(painter = painterResource(id = R.drawable.ic_windy),
+            style = TextStyle(
+                fontFamily = font,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Medium,
+                color = Color.LightGray
+            ),)
+        Image(painter = painterResource(id = weatherData.weatherType.iconRes),
             contentDescription = null,
             modifier = Modifier.width(40.dp))
-        Text(text = "24",
-            color = textColor,
-            fontWeight = FontWeight.Bold)
+        Text(
+            text = "${weatherData.temperatureCelsius}°C",
+            style = TextStyle(
+                fontFamily = font,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor
+            ),)
     }
 }

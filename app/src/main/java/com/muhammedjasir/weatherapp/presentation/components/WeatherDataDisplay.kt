@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 fun WeatherDataDisplay(
     value: Int,
     unit:String,
-    icon: Int,
+    icon: ImageVector,
     modifier: Modifier = Modifier,
     textStyle: TextStyle = TextStyle(),
     iconTint: Color = Color.White
@@ -29,7 +29,7 @@ fun WeatherDataDisplay(
         verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
-            painter = painterResource(id = icon),
+            imageVector = icon,
             contentDescription = null,
             tint = iconTint,
             modifier = Modifier.size(25.dp)

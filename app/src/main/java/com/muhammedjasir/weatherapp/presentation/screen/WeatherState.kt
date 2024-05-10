@@ -1,4 +1,4 @@
-package com.muhammedjasir.weatherapp.presentation
+package com.muhammedjasir.weatherapp.presentation.screen
 
 import com.muhammedjasir.weatherapp.domain.weather.WeatherInfo
 
